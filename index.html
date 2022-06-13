@@ -2,87 +2,98 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Askerka CV</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
-    <img src="img/photo.jpg" alt="photo" />
-    <h1>Askerka Siarhei</h1>
-    <p>
-      <em>I'm a lead engineer.</em>
-    </p>
-    <p>I like treveling, play guitar, programming.</p>
-    <hr />
-    <h2>My social networks</h2>
-    <ul>
-      <li>
-        <a
-          href="https://instagram.com/sergei_oskerko?igshid=YmMyMTA2M2Y="
-          target="_blank"
-          >Instagram</a
-        >
-      </li>
-      <li><a href="https://vk.com/by_sergei" target="_blank">VK</a></li>
-      <li>
-        <a
-          href="https://www.linkedin.com/in/sergei-oskerko-9839461a9/"
-          target="_blank"
-          >LinkedIn</a
-        >
-      </li>
-    </ul>
+    <div class="container">
+      <div class="info">
+        <img src="img/photo.jpg" alt="photo" class="avatar" />
+        <div class="info-text">
+          <h1>Askerka Siarhei</h1>
+          <p>I'm a lead engineer.</p>
+          <p>I like treveling, play guitar, programming.</p>
 
-    <hr />
+          <h4>My social networks</h4>
+          <a
+            href="https://instagram.com/sergei_oskerko?igshid=YmMyMTA2M2Y="
+            target="_blank"
+            >Instagram</a
+          >
+          |
+          <a href="https://vk.com/by_sergei" target="_blank">VK</a>
+          |
+          <a
+            href="https://www.linkedin.com/in/sergei-oskerko-9839461a9/"
+            target="_blank"
+            >LinkedIn</a
+          >
+        </div>
+      </div>
 
-    <h2>My hobbies</h2>
-    <ol>
-      <li>Swimming pool</li>
-      <li>Motorcycle</li>
-      <li>Guitar</li>
-      <li>Traveling</li>
-    </ol>
+      <div class="card bg-yellow">
+        <h2>My hobbies</h2>
+        <ul class="list">
+          <li>Swimming pool</li>
+          <li>Motorcycle</li>
+          <li>Guitar</li>
+          <li>Traveling</li>
+        </ul>
+      </div>
 
-    <hr />
+      <div class="card bg-green">
+        <h2>Experience</h2>
+        <table class="table">
+          <tr>
+            <th>Company</th>
+            <th>Job title</th>
+            <th>Year</th>
+          </tr>
+          <tr>
+            <td>CJSC "FOTEK"</td>
+            <td>Lead engineer</td>
+            <td>2016-now</td>
+          </tr>
+          <tr>
+            <td>OJSC "Minsk Research Institute of Radio Materials"</td>
+            <td>Process Engineer 2 category</td>
+            <td>2013-2016</td>
+          </tr>
+        </table>
+      </div>
 
-    <h2>Experience</h2>
-    <table>
-      <tr>
-        <th>Company</th>
-        <th>Job title</th>
-        <th>Year</th>
-      </tr>
-      <tr>
-        <td>CJSC "FOTEK"</td>
-        <td>Lead engineer</td>
-        <td>2016-now</td>
-      </tr>
-      <tr>
-        <td>OJSC "Minsk Research Institute of Radio Materials"</td>
-        <td>Process Engineer 2 category</td>
-        <td>2013-2016</td>
-      </tr>
-    </table>
+      <div class="contact">
+        <h2>Contact with me</h2>
+        <form action="/">
+          <div class="row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" name="name" placeholder="Enter your name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter Your email"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="comment">Comment</label>
+            <textarea name="comment" id="comment" cols="30" rows="6"></textarea>
+          </div>
+          <input class="btn" type="submit" value="Send" />
+        </form>
+      </div>
 
-    <hr />
-
-    <h2>Contact with me</h2>
-    <form action="">
-      <label for="name">Your Name</label>
-      <input type="text" name="name" placeholder="Enter your name" />
-      <br />
-      <label for="email">Email</label>
-      <input
-        type="email"
-        name="email"
-        id="email"
-        placeholder="Enter Your email"
-      />
-      <br />
-      <label for="comment">Comment</label>
-      <textarea name="comment" id="comment" cols="30" rows="6"></textarea>
-      <br />
-      <input type="submit" value="Send" />
-    </form>
+      <div class="position">
+        <div class="box"></div>
+      </div>
+    </div>
   </body>
 </html>
